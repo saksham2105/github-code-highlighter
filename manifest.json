@@ -1,0 +1,15 @@
+{
+    "manifest_version" : 3,
+    "name" : "Github Code Pointer Copier",
+    "description" : "Copy Code Pointer Url By Dragging and Dropping code",
+    "version" : "1",
+    "icons" : {
+        "16" : "/images/logo.jpg",
+        "48" : "/images/logo.jpg",
+        "128": "/images/logo.jpg"
+    },
+    "content_scripts" : [{
+        "matches" : ["https://github.com/*"],
+        "js": ["script.js"]
+    }]
+}
